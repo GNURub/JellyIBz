@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript"
+  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDauRxu0vzFPIFLS4jXuZ4riNbDeeGTym8&v=3.exp&sensor=true&region=ES&libraries=weather,panoramio&components=country:es"> </script>
+  		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/mapa.js"></script>
+  		<script src="http://localhost:8080/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+				<a class="navbar-brand" href="#">JellyIBz</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Mapa de Medusas</a></li>
+  					<li><a href="#">Ibiza en Twittwer</a></li>
+				</ul>
+				<form class="navbar-form navbar-left" id="searchBeach" role="search">
+			    	<div class="form-group">
+				      	<div class="form-group">
+        					<input type="text" class="form-control" id="addressBeach" placeholder="Search">
+      					</div>
+      					<button type="submit" class="btn btn-default">Search</button>
+			    	</div>
+			    </form>
+			</div>
+		</nav>
+		<div id="mapa">
+		</div>
+		<div id="options">
+			<div id="tiempo">
+				<span>Tiempo:</span>
+				<div class="btn-group btn-group-long">
+					<button type="button" id="aWeather" class="btn btn-primary">On</button>
+  					<button type="button" id="dWeather" class="btn btn-primary disabled">Off</button>
+				</div>
+			</div>
+			<div id="panoramio">
+				<span>Fotos:</span>
+				<div class="btn-group btn-group-long">
+					<button type="button" id="aPanoramio" class="btn btn-primary">On</button>
+  					<button type="button" id="dPanoramio" class="btn btn-primary disabled">Off</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

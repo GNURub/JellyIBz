@@ -1,0 +1,56 @@
+html, body, #mapa {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+div#mapa,
+div#mapa * { .box-sizing(content-box); }
+div#mapa
+{
+	top: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 0;
+}
+div#options
+{
+	position: fixed;
+	left:0;
+	margin: 1%;
+	background: rgba(254,254,250,.9);
+	border-radius: 5px;
+	padding: 8px;
+	box-shadow: rgba(0,0,0,.4);
+}
+div#options > div:first-child
+{
+	display: block;
+	margin-bottom: 60%;
+	position: relative;
+}
+div#options > * > span
+{
+	text-align: center;
+	color: black;
+	margin: 2px;
+}
+div#options > * > span, div.btn-group
+{
+	display: block;
+}
+div.navbar-wrapper
+{
+	
+	margin: 1% 0 0 0;
+}
+div.navbar
+{
+	border-radius: 5px;
+	z-index: 1;
+}
+.ui-autocomplete{
+	z-index: 3!important;
+}

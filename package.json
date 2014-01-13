@@ -1,0 +1,29 @@
+{
+  "name": "JellyIBz",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://gnurub@bitbucket.org/gnurub/jellyibz.git"
+  },
+  "dependencies": {
+    "socket.io": "0.9.14"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "description": "JellyIBz",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "medusas",
+    "jellyfish",
+    "jellyibz",
+    "JellyIBz"
+  ],
+  "author": "Ruben Cid Lara",
+  "license": "Copyright"
+}
